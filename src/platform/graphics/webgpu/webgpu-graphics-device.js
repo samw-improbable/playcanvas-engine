@@ -891,7 +891,7 @@ class WebgpuGraphicsDevice extends GraphicsDevice {
         this.pipeline = null;
 
         // timestamp
-        const computePassDesc = this.setupTimeStampWrites(undefined, name);
+        const computePassDesc = this.setupTimeStampWrites({}, name);
 
         // start the pass
         const debugLabel = `ComputePass-${name}`;
